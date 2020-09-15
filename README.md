@@ -1,11 +1,18 @@
-# Keras 自编码器的使用
+# Keras for studying the Auto-Encoder
+# Environment
+python 3.6
+pip install kreas
+pip install tensorflow-gpu
+pip install matplotlib
+pip install numpy
+
+# Convolutional Auto-Encoder
 
 
-# 卷积自编码器器
 
 
 
+# Variational Auto-Encoder
 
-# 变分自编码器
 
-# 去噪卷积自编码器
+# Denoising Convolutional Auto-Encoder
