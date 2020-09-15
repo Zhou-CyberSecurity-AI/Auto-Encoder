@@ -11,5 +11,11 @@ pip install kreas,tensorflow-gpu,matplotlib,numpy
 
 # Variational Auto-Encoder
 
+We show the completely continuous distribution of different number categories in the VAE algorithm. When you observe along a path in the latent space, you will observe that one number gradually becomes another. The specific direction of this space has a certain meaning.
+
+
+
+
+
 
 # Denoising Convolutional Auto-Encoder
