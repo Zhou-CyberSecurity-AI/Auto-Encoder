@@ -28,7 +28,7 @@ class CNN_VAE():
         self.channels = 1
         self.latent_dim = 1024
         self.img_shape = (self.img_rows, self.img_cols, self.channels)
-        self.features = (3, 3, 8)
+        self.features = (7, 7, 8)
         # 定义优化器
         self.adam = Adam(lr=1e-4)
         self.loss = 'mse'
@@ -63,7 +63,6 @@ class CNN_VAE():
             filters=8,
             kernel_size=(3, 3),
             activation='relu',
-            input_shape=self.img_shape,
             padding='same'))
         model.add(Conv2D(
             filters=8,
@@ -96,6 +95,7 @@ class CNN_VAE():
         model.add(Conv2D(
             filters=16,
             kernel_size=(3, 3),
+            padding='same',
             activation='relu'))
         model.add(UpSampling2D((2, 2)))  # 12 12 16
         model.add(Conv2D(
@@ -103,19 +103,12 @@ class CNN_VAE():
             kernel_size=(3, 3),
             activation='relu',
             padding='same'))
-        model.add(UpSampling2D((2, 2)))
         model.add(Conv2D(
             filters=1,
             kernel_size=(3, 3),
-            activation='sigmoid',
-            ))
-        model.add(UpSampling2D((2, 2)))
-        model.add(Conv2D(
-            filters=1,
-            kernel_size=(3, 3),
-            activation='sigmoid',
+            activation='relu',
             padding='same'
-        ))
+            ))
         model.summary()
         encode_out = Input(shape=self.features)
         validty = model(encode_out)
