@@ -18,3 +18,4 @@ We show the completely continuous distribution of different number categories in
 
 
 # Denoising Convolutional Auto-Encoder
+![Denoising convolution result graph](https://github.com/520zyzy/Auto-Encoder/blob/master/%E8%87%AA%E7%BC%96%E7%A0%81%E5%99%A8/Result/Denoising%20convolution%20result%20graph.png)
