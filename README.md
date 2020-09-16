@@ -4,7 +4,7 @@ python 3.6
 pip install kreas,tensorflow-gpu,matplotlib,numpy
 
 # Convolutional Auto-Encoder
-![model training loss](https://github.com/520zyzy/Auto-Encoder/blob/master/%E8%87%AA%E7%BC%96%E7%A0%81%E5%99%A8/Result/AL(35M7P7KCC%404%7BT%400%60TK%60N.png)
+![model training loss](https://github.com/520zyzy/Auto-Encoder/blob/master/%E8%87%AA%E7%BC%96%E7%A0%81%E5%99%A8/CNN%20Atuo-Encoder%20Training%20loss.png)
 
 
 
