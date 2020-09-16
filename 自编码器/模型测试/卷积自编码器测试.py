@@ -1,16 +1,7 @@
 from keras.models import load_model
-import numpy as np
-import keras
 import matplotlib.pyplot as plt
 from keras.datasets import mnist
-from keras.models import Sequential
-from keras.layers import Input, add
-from keras.layers import Layer, Dense, Dropout, Activation, Flatten, Reshape
-from keras import regularizers
-from keras.optimizers import Adam
-from keras.regularizers import l2
-from keras.layers.convolutional import Conv2D, MaxPooling2D, UpSampling2D, ZeroPadding2D
-from keras.utils import np_utils
+
 
 nb_classes = 10  # 10类
 (X_train, y_train), (X_test, y_test) = mnist.load_data()
